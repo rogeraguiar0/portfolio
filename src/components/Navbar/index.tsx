@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useMedia from "use-media";
-import { userData } from "@/utils/userData";
 
 import {
   Navbar as NavbarWrapper,
@@ -24,7 +23,7 @@ export interface MenuButtonOpen {
 export const NavBar = (): JSX.Element => {
   const isWide = useMedia({ maxWidth: "991px" });
 
-  document.title = userData.nameUser;
+  document.title = "Róger Aguiar";
 
   const [open, setOpen] = useState(false);
 
@@ -38,13 +37,13 @@ export const NavBar = (): JSX.Element => {
         <NavbarMobileArea>
           <LogoTipo>
             <LogoTipoImage
-              src={`https://github.com/${userData.githubUser}.png`}
-              alt={userData.nameUser}
-              title={userData.nameUser}
+              src={`https://github.com/rogeraguiar0.png`}
+              alt="Róger Aguiar"
+              title="Róger Aguiar"
               width={"48px"}
               height={"48px"}
             />
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <LogoTipoText>Róger Aguiar</LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
@@ -65,40 +64,34 @@ export const NavBar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
-      {userData.whatsappNumber && (
-        <Button
-          type="primary"
-          as="a"
-          target="_blank"
-          href={`https://api.whatsapp.com/send?phone=+55${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
-        >
-          Falar no whatsapp
-        </Button>
-      )}
+      <Button
+        type="primary"
+        as="a"
+        target="_blank"
+        href={`https://api.whatsapp.com/send?phone=+5531999054405&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
+      >
+        Whatsapp
+      </Button>
 
-      {userData.githubUser && (
-        <Button
-          type="icon"
-          target="_blank"
-          as="a"
-          aria-label="Github"
-          href={`https://github.com/${userData.githubUser}`}
-        >
-          <FaGithub />
-        </Button>
-      )}
+      <Button
+        type="icon"
+        target="_blank"
+        as="a"
+        aria-label="Github"
+        href={`https://github.com/rogeraguiar0`}
+      >
+        <FaGithub />
+      </Button>
 
-      {userData.linkedinUser && (
-        <Button
-          type="icon"
-          target="_blank"
-          as="a"
-          aria-label="LinkedIn"
-          href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
-        >
-          <FaLinkedinIn />
-        </Button>
-      )}
+      <Button
+        type="icon"
+        target="_blank"
+        as="a"
+        aria-label="LinkedIn"
+        href={`https://www.linkedin.com/in/rogeraguiar0`}
+      >
+        <FaLinkedinIn />
+      </Button>
     </NavbarLinks>
   );
 };

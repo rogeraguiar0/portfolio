@@ -1,39 +1,75 @@
-import imgHTML from "../public/static/img/stack/html.svg";
-import imgCSS from "../public/static/img/stack/css.svg";
-import imgJS from "../public/static/img/stack/js.svg";
-import imgNode from "../public/static/img/stack/node.svg";
-import imgStyled from "../public/static/img/stack/styled.svg";
-import imgReact from "../public/static/img/stack/react.svg";
-import { FaVuejs } from "react-icons/fa";
+import { SiHtml5 } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
-import { FaDocker } from "react-icons/fa";
+import { SiReact } from "react-icons/si";
+import { SiStyledcomponents } from "react-icons/si";
+import { SiSass } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 export const stackData = [
   {
     title: "HTML",
-    img: imgHTML,
+    img: SiHtml5,
   },
   {
     title: "CSS",
-    img: imgCSS,
+    img: SiCss3,
   },
   {
     title: "JS",
-    img: imgJS,
+    img: SiJavascript,
   },
+  { title: "TypeScript", img: SiTypescript },
   {
-    title: "Node JS",
-    img: imgNode,
+    title: "React",
+    img: SiReact,
   },
   {
     title: "Styled Components",
-    img: imgStyled,
+    img: SiStyledcomponents,
   },
   {
-    title: "React",
-    img: imgReact,
+    title: "Sass",
+    img: SiSass,
   },
-  { title: "Vuejs", img: FaVuejs },
-  { title: "TypeScript", img: SiTypescript },
-  { title: "Docker", img: FaDocker },
+  {
+    title: "Next.js",
+    img: SiNextdotjs,
+  },
+  {
+    title: "Prisma",
+    img: SiPrisma,
+  },
+  {
+    title: "Node.js",
+    img: SiNodedotjs,
+  },
+  {
+    title: "Express",
+    img: SiExpress,
+  },
+  {
+    title: "PostgreSQL",
+    img: SiPostgresql,
+  },
+  {
+    title: "Python",
+    img: SiPython,
+  },
+  {
+    title: "Django",
+    img: SiDjango,
+  },
+  {
+    title: "Github",
+    img: SiGithub,
+  },
 ];

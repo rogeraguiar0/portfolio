@@ -18,6 +18,10 @@ export const StackCard = styled("div", {
   justifyContent: "center",
   position: "relative",
 
+  svg: {
+    color: "$brand1",
+  },
+
   [`& ${Text}`]: {
     opacity: 0,
     position: "absolute",

@@ -9,7 +9,6 @@ import { Project } from "@/components/Project";
 
 // Data
 import { stackData } from "@/utils/stackData";
-import { userData } from "@/utils/userData";
 
 // Page Style
 import {
@@ -24,7 +23,6 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-
 export const Home = (): JSX.Element => {
   return (
     <main>
@@ -32,12 +30,15 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+              Tecnologia é minha paixão - Desenvolvedor em constante evolução{" "}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              Olá! Eu sou o Róger, tenho 19 anos, sou estudante de Sistemas da
+              Informação na faculdade Anhanguera e de desenvolvimento Fullstack
+              na Kenzie Academy Brasil! Adoro a tecnologia e a maneira como ela
+              consegue modificar o ambiente, então sempre gostei de me aventurar
+              nesse mundo. Tenho um aprendizado rápido que é a principal razão
+              da minha busca por novos desafios!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
@@ -53,7 +54,7 @@ export const Home = (): JSX.Element => {
       <StackSection id="tecnologias">
         <Container>
           <Text as="h4" type="heading3" color="grey1">
-            Ferramentas que domino
+            Tecnologias que domino
           </Text>
           <StackCards>
             {stackData.map((stack, index) => (
@@ -70,15 +71,15 @@ export const Home = (): JSX.Element => {
                 Vamos trocar uma ideia?
               </Text>
               <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+                Quando sobra um tempinho sempre estou lá no Linkedin, fazendo
+                networking e as vezes compartilhando meus projetos! Caso queira,
+                vamos trocar uma ideia!
               </Text>
               <Button
                 type="primary"
                 target="_blank"
                 as="a"
-                href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
+                href={`https://www.linkedin.com/in/rogeraguiar0/`}
               >
                 Acessar perfil no LinkedIn
               </Button>
