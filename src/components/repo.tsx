@@ -15,13 +15,17 @@ export const Repo = ({ repo }: iRepoProps) => {
   };
 
   return (
-    <li className="w-full flex flex-col gap-2 bg-zinc-700 rounded p-2">
+    <li className="w-full flex flex-col gap-2 bg-zinc-700 rounded p-4">
       <h3 className="text-lg font-semibold">{repo.name}</h3>
 
       <p>{repo.description ? handleDescription() : "..."}</p>
 
       <div className="flex justify-between">
-        <span className={`bg-zinc-600 rounded ${repo.language && "px-2 py-1"}`}>
+        <span
+          className={`bg-zinc-600 rounded cursor-default ${
+            repo.language && "px-2 py-1"
+          }`}
+        >
           {repo.language}
         </span>
 
