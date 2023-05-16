@@ -3,8 +3,11 @@ import {
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
+  SiFigma,
   SiNestjs,
+  SiFastify,
   SiExpress,
+  SiRedis,
   SiNodedotjs,
   SiTypescript,
   SiStyledcomponents,
@@ -14,7 +17,7 @@ import {
   SiMongodb,
   SiDocker,
   SiJira,
-  SiTrello,
+  SiUbuntu,
 } from "react-icons/si";
 
 export const frontend: iStack[] = [
@@ -38,7 +41,10 @@ export const frontend: iStack[] = [
     name: "Styled Components",
     icon: SiStyledcomponents,
   },
-
+  {
+    name: "Figma",
+    icon: SiFigma,
+  },
   {
     name: "Typescript",
     icon: SiTypescript,
@@ -51,8 +57,16 @@ export const backend: iStack[] = [
     icon: SiNestjs,
   },
   {
+    name: "Fastify",
+    icon: SiFastify,
+  },
+  {
     name: "Express",
     icon: SiExpress,
+  },
+  {
+    name: "Redis",
+    icon: SiRedis,
   },
   {
     name: "Node.js",
@@ -84,5 +98,9 @@ export const dev: iStack[] = [
   {
     name: "Jira",
     icon: SiJira,
+  },
+  {
+    name: "Linux",
+    icon: SiUbuntu,
   },
 ];

@@ -15,14 +15,16 @@ export const Repo = ({ repo }: iRepoProps) => {
   };
 
   return (
-    <li className="w-full flex flex-col gap-2 bg-zinc-700 rounded p-4">
-      <h3 className="text-lg font-semibold">{repo.name}</h3>
+    <li className="w-full flex flex-col gap-2 bg-[#2222227f] backdrop-blur-sm rounded">
+      <h3 className="text-lg bg-[#B1CECD] text-[#001F26] rounded-tl-sm rounded-tr-sm font-semibold py-2 px-4">
+        {repo.name}
+      </h3>
 
-      <p>{repo.description ? handleDescription() : "..."}</p>
+      <p className="px-4">{repo.description ? handleDescription() : "..."}</p>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between px-4 pb-4">
         <span
-          className={`bg-zinc-600 rounded cursor-default ${
+          className={`bg-[#58676B] rounded cursor-default ${
             repo.language && "px-2 py-1"
           }`}
         >
@@ -31,14 +33,14 @@ export const Repo = ({ repo }: iRepoProps) => {
 
         <div className="flex gap-2">
           <a
-            className="bg-zinc-900 w-fit py-1 px-2 rounded flex items-center gap-2 self-end"
+            className="bg-[#222222] w-fit py-1 px-2 rounded flex items-center gap-2 self-end hover:bg-[#174D4C] transition-colors duration-300"
             href={repo.html_url}
             target="_blank"
           >
             Repo <GoMarkGithub />
           </a>
           <a
-            className="bg-zinc-900 w-fit py-1 px-2 rounded flex items-center gap-2 self-end"
+            className="bg-[#222222] w-fit py-1 px-2 rounded flex items-center gap-2 self-end hover:bg-[#174D4C] transition-colors duration-300"
             href={repo.homepage}
             target="_blank"
           >

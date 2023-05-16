@@ -27,7 +27,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="w-full h-20 fixed top-0 left-0 border-b border-zinc-600 bg-zinc-800 backdrop-blur-md">
+    <header className="w-full h-20 fixed z-50 top-0 left-0 bg-transparent backdrop-blur-sm">
       <div className="w-full max-w-[1200px] h-full px-4 my-0 mx-auto relative flex justify-between items-center md:px-0">
         <div className="flex items-center gap-4">
           {user.avatar_url ? (
@@ -54,7 +54,7 @@ export const Header = () => {
         </button>
 
         {open && (
-          <nav className="flex flex-col gap-4 w-full p-4 absolute top-20 left-0 bg-zinc-800 backdrop-blur-md lg:hidden">
+          <nav className="flex flex-col gap-4 w-full p-4 absolute top-20 bg-[#222222] left-0 z-50 lg:hidden">
             <NavLink href="https://api.whatsapp.com/send?phone=+5531999054405&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os">
               <BsWhatsapp color="white" size={16} />
               Whatsapp
