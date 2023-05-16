@@ -65,20 +65,16 @@ export const backend: iStack[] = [
     icon: SiExpress,
   },
   {
-    name: "Redis",
-    icon: SiRedis,
-  },
-  {
     name: "Node.js",
     icon: SiNodedotjs,
   },
   {
-    name: "Python",
-    icon: SiPython,
-  },
-  {
     name: "Django",
     icon: SiDjango,
+  },
+  {
+    name: "Python",
+    icon: SiPython,
   },
 ];
 
@@ -86,6 +82,10 @@ export const dev: iStack[] = [
   {
     name: "PostgreSQL",
     icon: SiPostgresql,
+  },
+  {
+    name: "Redis",
+    icon: SiRedis,
   },
   {
     name: "MongoDB",

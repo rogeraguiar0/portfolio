@@ -14,6 +14,8 @@ export const Repo = ({ repo }: iRepoProps) => {
     return repo.description;
   };
 
+  console.log(repo);
+
   return (
     <li className="w-full flex flex-col gap-2 bg-[#2222227f] backdrop-blur-sm rounded">
       <h3 className="text-lg bg-[#B1CECD] text-[#001F26] rounded-tl-sm rounded-tr-sm font-semibold py-2 px-4">
@@ -39,13 +41,15 @@ export const Repo = ({ repo }: iRepoProps) => {
           >
             Repo <GoMarkGithub />
           </a>
-          <a
-            className="bg-[#222222] w-fit py-1 px-2 rounded flex items-center gap-2 self-end hover:bg-[#174D4C] transition-colors duration-300"
-            href={repo.homepage}
-            target="_blank"
-          >
-            App <GoRocket />
-          </a>
+          {repo.homepage && (
+            <a
+              className="bg-[#222222] w-fit py-1 px-2 rounded flex items-center gap-2 self-end hover:bg-[#174D4C] transition-colors duration-300"
+              href={repo.homepage}
+              target="_blank"
+            >
+              App <GoRocket />
+            </a>
+          )}
         </div>
       </div>
     </li>
