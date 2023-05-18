@@ -37,12 +37,7 @@ export default function Home() {
       <Header />
 
       <main className="h-full bg-transparent">
-        <section
-          className="w-full max-w-[1200px] my-0 mx-auto mt-20 flex flex-col gap-4 p-2 md:justify-evenly"
-          style={{
-            minHeight: "calc(100vh - 5rem)",
-          }}
-        >
+        <section className="w-full max-w-[1200px] my-0 mx-auto mt-20 flex flex-col gap-4 p-2 md:justify-evenly">
           <div className="w-full h-fit flex flex-col justify-between gap-2 md:flex-row">
             <div className="flex flex-col bg-[#2222227f] w-full p-2 rounded backdrop-blur-sm md:p-4 md:w-fit md:justify-between">
               <h2 className="text-[#71F3E7] text-xl font-semibold mb-4 md:text-4xl">
@@ -133,7 +128,7 @@ export default function Home() {
           </h2>
 
           <div className="flex flex-col gap-8 justify-between md:flex-row">
-            <div className="w-full max-w-xs p-4 bg-[#222222] h-fit rounded md:sticky md:top-24">
+            <div className="w-full p-4 bg-[#222222] h-fit rounded md:max-w-sm md:sticky md:top-24">
               <h3 className="text-xl font-semibold mb-2 flex justify-between items-center md:text-2xl">
                 Repositórios{" "}
                 <FaGithubSquare className="text-2xl" color="#B1CECD" />
@@ -153,7 +148,7 @@ export default function Home() {
               </p>
             </div>
 
-            <ul className="flex flex-col gap-4 max-w-lg mb-8">
+            <ul className="flex flex-col gap-4 mb-8 md:max-w-lg">
               {repos?.map((repo, i) => (
                 <Repo key={i} repo={repo} />
               ))}
